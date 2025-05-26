@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Perhatian Dulu!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Karla', sans-serif;
+      background-color: #0b6c8c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .message {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 40px;
+      animation: slideUp 1s ease forwards;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .message strong {
+      color: #c0392b;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      opacity: 0;
+      animation: fadeInButtons 1s ease forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeInButtons {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .buttons button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      transition: transform 0.2s;
+    }
+
+    .buttons button:hover {
+      background-color: #2c80b4;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="message">
+      <p><strong>Eits, baca dulu, lho, ya.</strong> Halaman sebelumnya. <br>Awas, ya, nda dibaca, nanti <strong>Terra</strong> sama <strong>Pink</strong> nangis, nih😭✌🏼</p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="location.href='pesan.html'">Halaman Sebelumnya</button>
+      <button onclick="location.href='prince.html'">Halaman Selanjutnya</button>
+    </div>
+  </div>
+</body>
+</html>

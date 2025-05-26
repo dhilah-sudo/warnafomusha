@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Koneksi Terputus</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 90%;
+    }
+
+    .icon {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .retry {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .retry-btn {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .retry-btn:hover {
+      background-color: #005fa3;
+    }
+
+    .retry-icon {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://i.imgur.com/hyqL3b2.png" alt="No Signal" class="icon" />
+    <h2>Koneksi Internet Terputus</h2>
+    <p>Silakan periksa koneksi jaringan kamu, lalu coba lagi.</p>
+
+    <div class="retry" id="retryBox">
+      <button class="retry-btn" onclick="window.location.href='prank.html'">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/replay.png" alt="Retry" class="retry-icon" />
+        Coba Lagi
+      </button>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("retryBox").style.display = "flex";
+    }, 2500);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesan Kelulusan</title>
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Josefin sans', sans-serif;
+      background-image: url('https://i.imgur.com/JoTSwOx.jpeg');
+      color: #333;
+      line-height: 1.6;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Container utama */
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background: #2491b5;
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+    .header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.8rem;
+      margin-bottom: 8px;
+    }
+    .header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* Isi pesan */
+    .message {
+      padding: 30px 25px;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+    .message p + p {
+      margin-top: 1rem;
+    }
+
+    /* Tombol nama */
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+      background: #fafbfd;
+    }
+    .button-group button {
+      flex: 1 1 45%;
+      max-width: 180px;
+      padding: 12px 0;
+      font-family: 'Karla', sans-serif;
+      font-weight: 600;
+      background: #2491b5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .button-group button:hover {
+      background: #4834d4;
+      transform: translateY(-2px);
+    }
+
+    /* Next button di paling bawah */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #fafbfd;
+    }
+    .footer .next-btn {
+      padding: 12px 30px;
+      font-family: 'Karla', sans-serif;
+      font-weight: 600;
+      background: #2491b5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .footer .next-btn:active {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Pesan Kelulusan FOMUSHA</h1>
+      <p>Terima kasih atas perjalanan warna-warni kita bersama!</p>
+    </div>
+
+    <!-- Isi pesan panjang -->
+    <div class="message">
+      <p>Salam FOMUSHA Muda!<br>
+      Kepada Pelangi dan Langitnya FOMUSHA</p>
+
+      <p>Setelah tiga bulan lamanya kita berada di tempat berkelana bernama FOMUSHA. Hingga di sini, hari ini menjadi ujung hari di mana hati kita disatukan dalam kata “Kelulusan”.</p>
+
+      <p>Sorak sorai bunga kecintaan telah bermekar, seolah menyambut kelulusan Pelanginya FOMUSHA. Sorak sorai bunga keabadian telah bermekar, seolah ia ‘kan termaktub dalam sejarah Langitnya FOMUSHA.</p>
+
+      <!-- ... (lanjutkan paragraf sesuai teksmu) ... -->
+
+      <p>Sebelum benar-benar meninggalkan pulau ini, izinkan aku sebagai perwakilan warna-warni ingin menghidangkan beberapa sesuap diksi, kepada Tuan Rumah FOMUSHA atas ilmu yang sudah diberi, sabar yang seolah terbagi, dan selalu memotivasi. Peta diksi ini memang hanya sebuah aksara ilusi, namun kenangannya akan kelak abadi.</p>
+    </div>
+
+    <!-- Tombol untuk tiap halaman -->
+    <div class="button-group">
+      <button onclick="location.href='halaman selanjutnya 2.html'">Mr. Prince</button>
+      <button onclick="location.href='halaman selanjutnya 3.html'">Ms. Zella</button>
+      <button onclick="location.href='halaman selanjutnya 4.html'">Ms. Jasmine</button>
+      <button onclick="location.href='halaman selanjutnya 5.html'">Ms. Melody</button>
+    </div>
+
+    <!-- Tombol Next -->
+    <div class="footer">
+      <button class="next-btn" onclick="location.href='halaman selanjutnya .html'">Halaman Selanjutnya</button>
+    </div>
+  </div>
+</body>
+</html>
